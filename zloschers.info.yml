@@ -1,0 +1,11 @@
+name: Zloschers
+description: 'Drupal 8 Starter Theme from Zlosch'
+type: theme 
+core: 8.x
+
+libraries:
+  - zloschers/global-css
+  - zloschers/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
