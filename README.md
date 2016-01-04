@@ -1,10 +1,17 @@
-# zloschers_d8_theme
-simple drupal8 frontend starting theme
+# Zloschers - Free Drupal 8 starting Theme
 
-# Install Instructions
-1) put package.json and Gulpfile to the project root.<br />
-2) edit the gulpfile for the specific theme<br />
-3) run: npm install<br />
-4) run: gulp watch<br />
+Integrates Node.js, Gulp, Susy Grid, task running and Live Reload.
+
+## Requirements
+
+- Node.js
+- Gulp.js - Install Gulp with: npm install gulp -g
+
+## Installation Instructions
+1) CD into theme directory and run: npm install
+2) run: gulp to start gulp watching and compiling
+
+## Tutorial
+- in the near future there will be a tutorial on [http://zlosch.com](http://zlosch.com)
 
 
