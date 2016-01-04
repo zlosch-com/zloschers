@@ -1,24 +1,17 @@
+
 {#
 /**
  * @file
- * Default page.tpl.php
+ * Default theme implementation to display a single Drupal page.
  */
-#}
-<div class="layout-container">
-
-  <header role="banner">
+ #}
+<header class="main-header" role="banner">
+  <div class="container">
     {{ page.header }}
-  </header>
+  </div>
+</header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
+<div class="container">
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 

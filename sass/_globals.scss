@@ -25,6 +25,10 @@ body{
     box-sizing:border-box;
 }
 
+.container{
+  @include container(1100px);
+}
+
 
 /* =======================================================================
 ## ++ Cleafix
