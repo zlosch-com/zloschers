@@ -1,0 +1,12 @@
+footer {
+  @include span(12);
+  background:#2e2e2e;
+  color:#fff;
+  padding:10px 0;
+  h2 {
+    color:#fff;
+  }
+  a {
+    color: #9cccff;
+  }
+}

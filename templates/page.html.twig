@@ -5,14 +5,21 @@
  * Default theme implementation to display a single Drupal page.
  */
  #}
+
 <header class="main-header" role="banner">
   <div class="container">
     {{ page.header }}
   </div>
 </header>
 
-<div class="container">
+
+{% if page.mainnavigation %}
+  {{ page.mainnavigation }}
+{% endif %}
+
+
   <main role="main">
+    <div class="container">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -24,13 +31,15 @@
         {{ page.sidebar }}
       </aside>
     {% endif %}
-
+    </div>
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
 
-</div>{# /.layout-container #}
+
+{% if page.footer %}
+ <footer role="contentinfo">
+  <div class="container">
+      {{ page.footer }}
+  </div>
+    </footer>
+{% endif %}
