@@ -1,16 +1,16 @@
 {
-  "name": "olympos-gulp",
+  "name": "zloschers-gulp",
   "version": "1.0.0",
-  "description": "Gulp dependencies for Olympos WordPress theme",
+  "description": "Gulp dependencies for Zloschers Drupal 8 Starter Theme",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivandoric/olympos.git"
+    "url": "https://github.com/zlosch-com/zloschers_d8_theme"
   },
-  "author": "Ivan Dorić",
+  "author": "Johann Schwabl",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
