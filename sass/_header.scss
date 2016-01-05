@@ -4,6 +4,17 @@
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%);
+  -moz-transition: .5s ease-in-out;
+  -ms-filter: grayscale(100%);
+  -ms-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%);
+  -o-transition: .5s ease-in-out;
+  filter: grayscale(100%);
+  transition: .5s ease-in-out;
+  filter: gray; /* IE 6-9 */
 }
 
 .logo {
