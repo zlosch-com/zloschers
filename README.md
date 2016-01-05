@@ -1,5 +1,7 @@
 # Zloschers - Free Drupal 8 starting Theme
 
+![zloschers](https://raw.github.com/zlosch-com/zloschers_d8_theme/master/screenshot.png)
+
 Integrates Node.js, Gulp, Susy Grid, task running and Live Reload.
 
 ## Requirements
