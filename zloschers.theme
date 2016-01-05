@@ -7,7 +7,7 @@
 function zloschers_css_alter(&$css) {
   $theme_path = drupal_get_path('theme', 'zloschers');
 // Add googlefonts
-  $googlefonts = '//fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather+Sans:400,700';
+  $googlefonts = '//fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700italic|Dosis';
   $css[$googlefonts] = array(
     'data' => $googlefonts,
     'type' => 'external',

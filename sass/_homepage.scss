@@ -2,13 +2,102 @@ main{
   margin-top: 100px;
 }
 
+.front-content{
+  @include span(12);
+    .teaser{
+      margin-bottom:20px;
+      @include span(3);
+        img{
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: .5s ease-in-out;
+          -moz-filter: grayscale(100%);
+          -moz-transition: .5s ease-in-out;
+          -ms-filter: grayscale(100%);
+          -ms-transition: .5s ease-in-out;
+          -o-filter: grayscale(100%);
+          -o-transition: .5s ease-in-out;
+          filter: grayscale(100%);
+          transition: .5s ease-in-out;
+          filter: gray; /* IE 6-9 */
+          width:100%;
+          height:auto;
+
+        }
+        img:hover{
+          -webkit-filter: grayscale(0%);
+          -webkit-transition: .5s ease-in-out;
+          -moz-filter: grayscale(0%);
+          -moz-transition: .5s ease-in-out;
+          -ms-filter: grayscale(0%);
+          -ms-transition: .5s ease-in-out;
+          -o-filter: grayscale(0%);
+          -o-transition: .5s ease-in-out;
+          filter: grayscale(0%);
+          transition: .5s ease-in-out;
+          filter: gray; /* IE 6-9 */
+      }
+        .wrap{
+          height:80px;
+          display:table;
+          padding:10px;
+          border-top:1px solid #808080;
+          border-bottom:1px solid #808080;
+          width:100%;
+            h2{
+              display:table-cell;
+              vertical-align:middle;
+              font-size:1.5rem;
+                a{
+                  color: #4c4c4c;
+                  text-decoration:none;
+                }
+            }
+        }
+      .content{
+        p{
+          margin-top:10px;
+          height:150px;
+          border-bottom:1px solid #000;
+        }
+      }
+
+        @include tablets{
+          @include span(4);
+            @include phones{
+              @include span(12);
+          }
+        }
+    }
+}
+
 .layout-content{
   @include span(10);
+  border-right:1px solid #a3a3a3;
+
+    @include tablets{
+      @include span(9);
+      border:1px solid red;
+    }
+
+  @include phones{
+    @include span(12);
+  }
+
 }
 
 .layout-sidebar-first{
   @include span(2);
+
+    @include tablets{
+      @include span(3);
+    }
+
+  @include phones{
+    @include span(12);
+  }
+
 }
+
 
 
 

@@ -22,15 +22,17 @@
     <div class="container">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
+    <div class="{% if is_front %}front-content{% else %}layout-content{% endif %}">
       {{ page.content }}
     </div>{# /.layout-content #}
 
+  {% if not is_front %}
     {% if page.sidebar %}
       <aside class="layout-sidebar-first" role="complementary">
         {{ page.sidebar }}
       </aside>
     {% endif %}
+  {% endif %}
     </div>
   </main>
 

@@ -1,0 +1,20 @@
+<article class="teaser" clearfix"{{ attributes }} role="article">
+    {{ title_prefix }}
+    {% if not page %}
+        <div class="wrap">
+            <h2{{ title_attributes.addClass('node__title') }}>
+                <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            </h2>
+        </div>
+    {% endif %}
+    {{ title_suffix }}
+    <div class="content"{{ content_attributes }}>
+        {# We hide links now so that we can render them later. #}
+        {{ content|without('links') }}
+    </div>
+    {% if content.links %}
+        <div class="link-wrapper">
+            {{ content.links }}
+        </div>
+    {% endif %}
+</article>
